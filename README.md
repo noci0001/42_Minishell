@@ -77,4 +77,4 @@ You can checkout my LinkedIn profile at [my LinkedIn](https://linkedin.com/in/sa
 My effort was equally complimented by my capable teammate and friend [Adam Murawski](https://github.com/MrMuras)
 ## Authors
 
-@noci0001](https://www.linkedin.com/in/samuelnocita/) and [@MrMuras](https://www.github.com/MrMuras)
+[@noci0001](https://www.linkedin.com/in/samuelnocita/) and [@MrMuras](https://www.github.com/MrMuras)
