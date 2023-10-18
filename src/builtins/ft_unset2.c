@@ -35,16 +35,10 @@ int	absent_or_not(t_gen	*gen, t_env	*env)
 
 int	look_for_head(t_gen	*node, t_env *env)
 {
-	t_env	*curr;
-
 	if (ft_strchr(node->start->next->str, '=') != NULL)
 		return (0);
 	if (is_exact_match(node->start->next->str, env->key) == 1)
-	{
-		curr = env;
-		curr = env->next;
 		return (1);
-	}
 	return (0);
 }
 

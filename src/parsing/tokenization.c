@@ -65,6 +65,7 @@ t_token	*next_token2(char *line, int *i, char c, t_token	*token)
 	return (token);
 }
 
+//
 t_token	*next_token(char *line, int *i)
 {
 	t_token	*token;
@@ -79,6 +80,7 @@ t_token	*next_token(char *line, int *i)
 	return (next_token2(line, i, c, token));
 }
 
+// -
 t_token	*get_tokens(char *line)
 {
 	t_token	*prev;

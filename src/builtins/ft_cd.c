@@ -33,18 +33,16 @@ int	navigate_backward(t_env	*env)
 int	navigate_forward(t_env	*env, char	*arg)
 {
 	char	*cwd;
-	size_t	cwd_len;
 	char	*new_cwd;
 	char	*with_slash;
 
 	cwd = getcwd(NULL, 0);
-	cwd_len = ft_strlen(cwd);
 	with_slash = ft_strjoin("/", arg);
 	new_cwd = ft_strjoin(cwd, with_slash);
 	if (chdir(new_cwd) == 0)
 		update_pwd(env);
 	else
-		printf("");
+		write(1," ", 1);
 	free(with_slash);
 	free(new_cwd);
 	free(cwd);

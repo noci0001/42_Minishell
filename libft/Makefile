@@ -16,7 +16,7 @@
 
 NAME 		=	libft
 CC 			=	gcc
-CFLAGS 		=	-Wall -Wextra -Werror
+CFLAGS 		=	-g -Wall -Wextra -Werror
 RM			=	rm -rf
 HEADER		=	libft.h
 SRCS_DIR	=	src

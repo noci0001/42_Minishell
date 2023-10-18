@@ -2,7 +2,7 @@ NAME	= minishell
 
 CC			= gcc
 READLINE	= -I $(HOME)/goinfre/.brew/opt/readline/include/ -L $(HOME)/goinfre/.brew/opt/readline/lib/ -lreadline
-CFLAGS		= -Wall -Wextra -Werror -g -I headers/ -I libft/libft.a
+CFLAGS		= -g -I headers/ -I libft/libft.a
 
 RM			= rm -rf
 

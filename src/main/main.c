@@ -59,6 +59,15 @@ void	turn_off_echo(void)
 	}
 }
 
+
+// - Repurposing of quit signal to be ignored, and assign custom function to signal interruption
+// - Duplication of STDIN and STDOUT into general struct member gen.in and gen.out
+// - Reinitialization of FDs for every program execution  e.g. | "user: ./minishell"       |
+//                                                             | "Minishelly$ ./Minishell" |
+// - Core of the program lives inside a while loop and terminates
+//   when gen.exit indicates a FALSY integer such as 1
+//   Within the loop:
+//   - String is prompted
 int	main(int ac, char **av, char **env)
 {
 	t_gen	gen;

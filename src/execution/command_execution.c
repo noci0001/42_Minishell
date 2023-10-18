@@ -132,11 +132,9 @@ char	*check_dir(char *bin, char *command)
 
 int	exec_bin(char **args, t_env *env, t_gen *gen)
 {
-	int		i;
 	int		ret;
 	int		found;
 
-	i = 0;
 	found = GENERALERROR;
 	ret = CANNOTEXECUTE;
 	while (env && env->value)

@@ -14,14 +14,8 @@
 
 int	is_match(t_env	*env)
 {
-	int		found;
-
-	found = 0;
 	if (ft_strncmp(env->key, "PATH", 4) == 0)
-	{
-		found = SUCCESS;
 		return (SUCCESS);
-	}
 	else
 		return (GENERALERROR);
 }

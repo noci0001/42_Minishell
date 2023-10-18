@@ -28,7 +28,10 @@ char	*ft_strdup(const char *s1)
 	int		index;
 	char	*scpy;
 
-	scpy = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
+    if (!s1) {
+        return (NULL);
+    }
+    scpy = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
 	if (!scpy)
 		return (NULL);
 	index = 0;
@@ -46,12 +49,15 @@ char	*ft_strdup(const char *s1)
 
 char	*ft_strdup_for_envp(const char *s1, int mode)
 {
-	int		index;
 	char	*scpy;
 	char	**key_value_pair;
+    char    last_character;
 
-	index = 0;
 	scpy = NULL;
+    last_character = s1[ft_strlen(s1)];
+    if (last_character == '=') {
+        return (NULL);
+    }
 	key_value_pair = ft_split(s1, '=');
 	scpy = ft_strdup(key_value_pair[0]);
 	if (!scpy)

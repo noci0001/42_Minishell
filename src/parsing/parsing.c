@@ -61,6 +61,8 @@ int	check_for_open_quotes(t_gen *gen, char **line)
 	return (0);
 }
 
+// - Checking for open quotes
+// - Tokanization of head
 void	parse(char *line, t_gen *gen)
 {
 	t_token	*token;
